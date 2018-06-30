@@ -69,7 +69,7 @@ static void initInterruptPriorities(void)
     NVIC_SetPriority(PIT_KEY_SCANNER_IRQ_ID,   4);
     NVIC_SetPriority(PIT_KEY_DEBOUNCER_IRQ_ID, 4);
     NVIC_SetPriority(I2C_MAIN_BUS_IRQ_ID,      4);
-    NVIC_SetPriority(USB_IRQ_ID,               4);
+    NVIC_SetPriority(USB_IRQ_ID,               5);
 }
 
 static void delay(void)
