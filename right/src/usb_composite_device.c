@@ -163,7 +163,7 @@ static usb_device_class_config_list_struct_t UsbDeviceCompositeConfigList = {
     }
 }};
 
-bool IsHostSleeping = false;
+bool IsHostSleeping = true; // Assume the computer was sleeping when the UHK was plugged in, so the resume signal will always be sent to the host - see: https://github.com/UltimateHackingKeyboard/firmware/issues/132
 
 static void suspendHost(void) {
     IsHostSleeping = true;
